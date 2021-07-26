@@ -17,3 +17,6 @@ CREATE TABLE `admin_user` (
   PRIMARY KEY (`id`),
   KEY `idx_username` (`username`(10))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员表';
+
+INSERT INTO `admin_user` (`id`, `nickname`, `username`, `password`, `token`, `token_over_at`, `status`, `create_at`, `update_at`) VALUES
+(1, '管理员', 'admin', 'f6fdffe48c908deb0f4c3bd36c032e72', '', 0, 1, 1618366970, 1627308935);
